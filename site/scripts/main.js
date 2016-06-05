@@ -45,12 +45,23 @@ Site.is_mobile = function() {
 	return result;
 };
 
+Site.handle_scroll = function(event) {
+	var header = document.getElementsByTagName('header')[0];
+
+	if (window.scrollY > 0)
+		header.classList.add('floating'); else
+		header.classList.remove('floating');
+};
+
 /**
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile())
+	if (Site.is_mobile()) {
 		Site.mobile_menu = new Caracal.MobileMenu();
+	} else {
+		window.addEventListener('scroll', Site.handle_scroll);
+	}
 };
 
 

@@ -37,6 +37,7 @@ section#header {
 }
 
 header {
+	padding: 0em calc(~'(100% - 1200px) / 2');
 	border-bottom: 1px solid transparent;
 	transition: all 0.5s;
 }
@@ -44,12 +45,54 @@ header {
 header.floating {
 	border-bottom-color: @color_border;
 	background-color: @color_background;
-	box-shadow: 0px 2px 3px rbga(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 	color: @color_text;
 }
 
-header a.phone {
+header a.logo {
+	margin-top: 50px;
+	margin-right: 50px;
+	padding: 1em;
+	transition: all 0.5s;
+}
 
+header a.logo img {
+	height: 102px;
+	transition: all 0.5s;
+}
+
+header.floating a.logo {
+	margin: 0;
+}
+
+header.floating a.logo img {
+	height: 4em;
+}
+
+header a.phone {
+	position: absolute;
+	top: 1em;
+	left: calc(~'(100% - 1200px) / 2');
+	padding: 0.5em;
+	padding-left: 2em;
+
+	border: 1px solid @color_call_to_action;
+	border-radius: @border_radius * 2;
+	background-color: fade(@color_background, 60%);
+
+	color: @color_call_to_action;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 100%;
+}
+
+header a.phone svg {
+	position: absolute;
+	top: 0.4em;
+	left: 0.4em;
+	width: 1.2em;
+	height: 1.2em;
 }
 
 section#header div.container {
