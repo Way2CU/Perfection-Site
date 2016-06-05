@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../../units/schema/language.dtd">
+<document>
+	<footer>
+		<div class="form">
+			<h2><cms:text constant="title_footer"/></h2>
+			<cms:template file="parts/form.xml"/>
+		</div>
+
+		<div class="container">
+			<cms:template file="stock/copyright.xml">
+				<param name="holder" value="copyright_holder"/>
+				<param name="text" value="copyright_text"/>
+				<param name="light" value=""/>
+			</cms:template>
+		</div>
+	</footer>
+</document>

@@ -1,0 +1,260 @@
+/**
+ * Main Style Sheet
+ * Perfection Site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors: Mladen Mijatov
+ */
+
+@import 'common.less';
+@import (css) 'stock/header.css';
+@import (css) 'stock/copyright.css';
+
+body {
+	background-color: @color_background;
+
+	color: @color_text;
+	font-family: OpenSans, Arial;
+}
+
+h1, h2, h3, h4, h5,
+input, button {
+	font-family: OpenSans, Arial;
+}
+
+h1, h2 {
+	font-weight: 200;
+}
+
+section#header {
+	display: block;
+	position: relative;
+	min-height: 700px;
+
+	background-image: url(../images/header-background.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+header {
+	border-bottom: 1px solid transparent;
+	transition: all 0.5s;
+}
+
+header.floating {
+	border-bottom-color: @color_border;
+	background-color: @color_background;
+	box-shadow: 0px 2px 3px rbga(0, 0, 0, 0.3);
+	color: @color_text;
+}
+
+header a.phone {
+
+}
+
+section#header div.container {
+	display: block;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding: 1em calc(~'(100% - 1200px) / 2');
+
+	background-color: fade(@color_background, 60%);
+	text-align: center;
+}
+
+section#header h3 {
+	margin: 0px;
+	margin-bottom: 0.5em;
+}
+
+section#header form div.controls {
+	display: inline-block;
+}
+
+section#header form label {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+section#header form span {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.5em;
+	font-weight: bold;
+}
+
+section#header form input {
+	padding: 0.5em;
+
+	border: 1px solid @color_border;
+	border-radius: @border_radius;
+	background-color: @color_background;
+
+	color: @color_text;
+	transition: border-color 0.2s;
+}
+
+section#header form input:focus {
+	border-color: @color_footer_title;
+}
+
+section#header form button {
+	padding: 0.5em 2em;
+
+	border: 0;
+	border-radius: @border_radius;
+	.button;
+}
+
+/**
+ * Content
+ */
+section#problems {
+	display: block;
+	position: relative;
+	padding: @section_spacing calc(~'(100% - 1200px) / 2');
+
+	color: @color_title;
+}
+
+section#problems svg.arrow {
+	position: absolute;
+	bottom: -@section_spacing - 20px;
+	z-index: 1000;
+}
+
+section#solutions {
+	display: block;
+	position: relative;
+	padding: (@section_spacing * 2) calc(~'(100% - 1200px) / 2');
+
+	.gradient_background;
+}
+
+section#solutions:before,
+section#solutions:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: @section_spacing;
+	content: '';
+
+	background-image: url(../images/triangle.svg);
+	background-position: top left;
+	background-size: 100% @section_spacing;
+	background-repeat: 0px;
+	transform: scaleY(-1);
+}
+
+section#solutions:after {
+	top: auto;
+	bottom: 0px;
+	transform: scaleX(-1);
+}
+
+/**
+ * Footer
+ */
+footer {
+	text-align: center;
+	background-color: @color_text;
+	color: @color_background;
+}
+
+footer h2 {
+	padding: 0 35%;
+
+	color: @color_footer_title;
+	font-size: 2.5em;
+}
+
+footer div.form {
+	position: relative;
+	min-height: 700px;
+
+	background-color: @color_background;
+	background-image: url(../images/footer-background.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+
+	color: @color_text;
+}
+
+footer div.form div.container {
+	@width: 400px;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	width: @width;
+	margin-left: -@width / 2;
+
+	background-color: fade(@color_background, 60%);
+}
+
+footer div.form div.container h3 {
+	margin: 0px;
+	padding: 0.5em;
+
+	background-color: @color_footer_title;
+	color: @color_background;
+}
+
+footer div.form div.container form {
+	padding: 1em;
+}
+
+footer div.form div.container label {
+	display: block;
+	margin-bottom: 1em;
+}
+
+footer div.form div.container span {
+	display: inline-block;
+	width: 20%;
+	padding: 0.5em;
+	box-sizing: border-box;
+
+	vertical-align: middle;
+	text-align: left;
+}
+
+footer div.form div.container input {
+	width: 70%;
+	padding: 0.5em;
+
+	box-sizing: border-box;
+	border: 1px solid @color_border;
+	border-radius: @border_radius;
+	background-color: @color_background;
+
+	color: @color_text;
+	transition: border-color 0.2s;
+}
+
+footer div.form div.container input:focus {
+	border-color: @color_footer_title;
+}
+
+footer div.form div.container button {
+	padding: 0.5em 2em;
+
+	border: 0;
+	border-radius: @border_radius;
+	.button_top;
+}
+
+footer div.copyright {
+	display: inline-block;
+	text-align: left;
+}
+
+footer div.copyright a {
+	color: @color_background;
+}
+
+footer div.copyright a:hover {
+	text-decoration: none;
+}

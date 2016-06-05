@@ -9,7 +9,42 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<cms:svg file="sprite.svg"/>
+
+			<!-- Composited floaring and regular header with forms -->
+			<section id="header">
+				<cms:template file="parts/header.xml"/>
+			</section>
+
+			<!-- Content -->
+			<section id="problems">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="problems"
+					/>
+				<cms:svg file="sprite.svg" symbol="arrow-2" class="arrow"/>
+			</section>
+
+			<section id="solutions">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="solutions"
+					/>
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="solutions"
+					template="stock/features_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="sprite" value="sprite.svg"/>
+				</cms:module>
+			</section>
+
+			<!-- Footer with form -->
+			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>
 </document>

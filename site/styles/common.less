@@ -1,0 +1,65 @@
+/**
+ * Common Style Sheet
+ * Perfection Site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors: Mladen Mijatov
+ */
+
+@color_background: white;
+@color_text: #333333;
+
+@color_arrow_1: #44b1e4;
+@color_arrow_2: #34495e;
+
+@color_call_to_action: #2ecc71;
+@color_title: #0c638b;
+@color_footer_title: #0066ac;
+@color_border: #bdc3c7;
+
+@border_radius: 4px;
+@section_spacing: 40px;
+
+
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: 200;
+	src: url(../images/fonts/opensanshebrew-light.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: bold;
+	src: url(../images/fonts/opensanshebrew-bold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: normal;
+	src: url(../images/fonts/opensanshebrew-regular.woff) format('woff');
+}
+
+
+.button {
+	background-image: linear-gradient(-45deg, #44b1e4 0%, @color_footer_title 100%);
+	color: white;
+	font-weight: bold;
+}
+
+.button_top {
+	background-image: linear-gradient(180deg, #44b1e4 0%, @color_footer_title 100%);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+
+	color: white;
+	font-weight: bold;
+}
+
+.gradient_background {
+	background-image: linear-gradient(
+			-45deg,
+			rgba(12, 6, 34, 1) 0%,
+			rgba(74, 109, 185, 1) 50%,
+			rgba(68, 177, 228, 1) 100%
+		);
+	color: white;
+}

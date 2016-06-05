@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../../units/schema/language.dtd">
+<document>
+	<div class="container">
+		<h3><cms:text constant="title_form"/></h3>
+		<cms:module
+			name="contact_form"
+			action="show"
+			text_id="contact"
+			/>
+	</div>
+</document>
