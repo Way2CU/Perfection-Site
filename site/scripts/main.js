@@ -61,6 +61,7 @@ Site.on_load = function() {
 		Site.mobile_menu = new Caracal.MobileMenu();
 	} else {
 		window.addEventListener('scroll', Site.handle_scroll);
+		Site.handle_scroll();
 	}
 };
 

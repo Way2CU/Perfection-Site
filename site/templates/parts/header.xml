@@ -10,5 +10,21 @@
 		<param name="sprite" value="sprite.svg"/>
 	</cms:template>
 
+	<div class="article">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="header"
+			/>
+
+		<div class="guarantee">
+			<cms:svg file="sprite.svg" symbol="wreath"/>
+			<cms:text constant="guarantee"/>
+			<cms:svg file="sprite.svg" symbol="wreath"/>
+		</div>
+
+		<cms:svg file="sprite.svg" symbol="arrow-1" class="arrow"/>
+	</div>
+
 	<cms:template file="parts/form.xml"/>
 </document>

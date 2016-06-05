@@ -27,20 +27,18 @@
 			</section>
 
 			<section id="solutions">
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="solutions"
-					/>
-				<cms:module
-					name="articles"
-					action="show_list"
-					group="solutions"
-					template="stock/features_generic.xml"
-					>
-					<param name="title" value=""/>
-					<param name="sprite" value="sprite.svg"/>
-				</cms:module>
+				<h3><cms:text constant="title_solutions"/></h3>
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="solutions"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="sprite.svg"/>
+					</cms:module>
+				</ul>
 			</section>
 
 			<!-- Footer with form -->

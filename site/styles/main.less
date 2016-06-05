@@ -51,7 +51,7 @@ header.floating {
 
 header a.logo {
 	margin-top: 50px;
-	margin-right: 50px;
+	margin-right: 90px;
 	padding: 1em;
 	transition: all 0.5s;
 }
@@ -95,6 +95,65 @@ header a.phone svg {
 	height: 1.2em;
 }
 
+section#header div.article {
+	display: block;
+	padding-top: 200px;
+	padding-left: calc(~'50% + 100px');
+	padding-right: calc(~'(100% - 1200px) / 2');
+
+	color: @color_title;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+section#header div.guarantee {
+	position: relative;
+	margin-top: 2em;
+	padding: 0em 2em;
+	color: @color_guarantee;
+	font-weight: bold;
+	filter: drop-shadow(1px 1px 1px black);
+}
+
+section#header div.article h1 {
+	margin: 0px;
+	font-size: 1.6em;
+}
+
+section#header div.article p {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+section#header div.guarantee svg {
+	position: absolute;
+	top: 0px;
+	left: 1em;
+
+	@height: 3em;
+	@width: @height * 0.4658203125;
+
+	width: @width;
+	height: @height;
+}
+
+section#header div.guarantee svg:first-of-type {
+	left: auto;
+	right: 1em;
+	position: absolute;
+	transform: scaleX(-1);
+}
+
+section#header div.guarantee svg path {
+	fill: currentColor;
+}
+
+section#header svg.arrow {
+	position: absolute;
+	bottom: 19%;
+	right: 40%;
+}
+
 section#header div.container {
 	display: block;
 	position: absolute;
@@ -103,7 +162,7 @@ section#header div.container {
 	bottom: 0px;
 	padding: 1em calc(~'(100% - 1200px) / 2');
 
-	background-color: fade(@color_background, 60%);
+	background-color: fade(@color_background, 80%);
 	text-align: center;
 }
 
@@ -162,6 +221,22 @@ section#problems {
 	color: @color_title;
 }
 
+section#problems article p {
+	margin: 0px;
+	margin-bottom: 0.5em;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+}
+
+section#problems article p:first-of-type {
+	font-weight: 200;
+}
+
+section#problems article p:last-of-type {
+	font-weight: bold;
+}
+
 section#problems svg.arrow {
 	position: absolute;
 	bottom: -@section_spacing - 20px;
@@ -196,6 +271,50 @@ section#solutions:after {
 	top: auto;
 	bottom: 0px;
 	transform: scaleX(-1);
+}
+
+section#solutions h3 {
+	text-align: center;
+	padding: 0 5em;
+}
+
+section#solutions ul {
+	display: block;
+	margin: 0;
+	margin-top: 4em;
+	padding: 0;
+
+	list-style-type: none;
+	list-style-image: none;
+
+	text-align: center;
+}
+
+section#solutions ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(~'(1200px / 3) - 60px');
+	min-height: 200px;
+	margin-left: 30px;
+	margin-bottom: 3em;
+}
+
+section#solutions ul li:nth-of-type(0n+3) {
+	margin-left: 0;
+}
+
+section#solutions ul li svg {
+	width: 5em;
+	height: 5em;
+}
+
+section#solutions ul li svg path {
+	fill: currentColor;
+}
+
+section#solutions ul li h4 {
+	margin: 0;
+	margin-top: 0.5em;
 }
 
 /**
