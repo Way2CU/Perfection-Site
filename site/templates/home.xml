@@ -22,8 +22,11 @@
 					name="articles"
 					action="show"
 					text_id="problems"
+					template="parts/article_no_title.xml"
 					/>
-				<cms:svg file="sprite.svg" symbol="arrow-2" class="arrow"/>
+				<cms:desktop>
+					<cms:svg file="sprite.svg" symbol="arrow-2" class="arrow"/>
+				</cms:desktop>
 			</section>
 
 			<section id="solutions">

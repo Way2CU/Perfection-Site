@@ -23,7 +23,9 @@
 			<cms:svg file="sprite.svg" symbol="wreath"/>
 		</div>
 
-		<cms:svg file="sprite.svg" symbol="arrow-1" class="arrow"/>
+		<cms:desktop>
+			<cms:svg file="sprite.svg" symbol="arrow-1" class="arrow"/>
+		</cms:desktop>
 	</div>
 
 	<cms:template file="parts/form.xml"/>

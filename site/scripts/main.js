@@ -57,12 +57,11 @@ Site.handle_scroll = function(event) {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile()) {
+	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
-	} else {
-		window.addEventListener('scroll', Site.handle_scroll);
-		Site.handle_scroll();
-	}
+
+	window.addEventListener('scroll', Site.handle_scroll);
+	Site.handle_scroll();
 };
 
 
