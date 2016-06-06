@@ -106,15 +106,6 @@ section#header div.article {
 	text-align: center;
 }
 
-section#header div.guarantee {
-	position: relative;
-	margin-top: 2em;
-	padding: 0em 2em;
-	color: @color_guarantee;
-	font-weight: bold;
-	filter: drop-shadow(1px 1px 1px black);
-}
-
 section#header div.article h1 {
 	margin: 0px;
 	font-size: 1.6em;
@@ -123,6 +114,16 @@ section#header div.article h1 {
 section#header div.article p {
 	font-size: 0.9em;
 	font-weight: bold;
+}
+
+section#header div.guarantee {
+	position: relative;
+	margin-top: 2em;
+	padding: 0em 2em;
+	color: @color_guarantee;
+	font-weight: bold;
+	-webkit-filter: drop-shadow(1px 1px 1px black);
+	filter: drop-shadow(1px 1px 1px black);
 }
 
 section#header div.guarantee svg {
@@ -135,6 +136,7 @@ section#header div.guarantee svg {
 
 	width: @width;
 	height: @height;
+	fill: currentColor;
 }
 
 section#header div.guarantee svg:first-of-type {
@@ -142,10 +144,6 @@ section#header div.guarantee svg:first-of-type {
 	right: 1em;
 	position: absolute;
 	transform: scaleX(-1);
-}
-
-section#header div.guarantee svg path {
-	fill: currentColor;
 }
 
 section#header svg.arrow {
@@ -263,7 +261,7 @@ section#solutions:after {
 	background-image: url(../images/triangle.svg);
 	background-position: top left;
 	background-size: 100% @section_spacing;
-	background-repeat: 0px;
+	background-repeat: no-repeat;
 	transform: scaleY(-1);
 }
 
@@ -305,9 +303,6 @@ section#solutions ul li:nth-of-type(3n+0) {
 section#solutions ul li svg {
 	width: 5em;
 	height: 5em;
-}
-
-section#solutions ul li svg path {
 	fill: currentColor;
 }
 
