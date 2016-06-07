@@ -40,6 +40,18 @@
 	src: url(../images/fonts/opensanshebrew-regular.woff) format('woff');
 }
 
+@keyframes glow {
+	from {
+		opacity: 0.5;
+		bottom: 22%;
+	}
+
+	to {
+		opacity: 1;
+		bottom: 21%;
+	}
+}
+
 
 .button {
 	background-color: #44b1e4;
@@ -50,13 +62,17 @@
 	font-weight: bold;
 }
 
+.button_active {
+	background-image: linear-gradient(0deg, #44b1e4 0%, @color_footer_title 100%);
+}
+
 .gradient_background {
 	background-color: #130622;
 	background-image: linear-gradient(
-			-45deg,
-			rgba(12, 6, 34, 1) 0%,
-			rgba(74, 109, 185, 1) 50%,
-			rgba(68, 177, 228, 1) 100%
-		);
+	-45deg,
+	rgba(12, 6, 34, 1) 0%,
+	rgba(74, 109, 185, 1) 50%,
+	rgba(68, 177, 228, 1) 100%
+	);
 	color: white;
 }

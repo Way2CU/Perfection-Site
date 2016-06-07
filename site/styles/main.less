@@ -148,8 +148,13 @@ section#header div.guarantee svg:first-of-type {
 
 section#header svg.arrow {
 	position: absolute;
-	bottom: 19%;
-	right: 40%;
+	bottom: 21%;
+	right: 39%;
+	transform: scaleX(-1) rotate(-60deg);
+	animation-name: glow;
+	animation-direction: alternate;
+	animation-duration: 0.6s;
+	animation-iteration-count: infinite;
 }
 
 section#header div.container {
@@ -207,6 +212,16 @@ section#header form button {
 	border-radius: @border_radius;
 	.button;
 }
+
+section#header form button:hover {
+	box-shadow: 0px 0px 5px 2px @color_call_to_action;
+}
+
+section#header form button:active {
+	.button_active
+}
+
+
 
 /**
  * Content
@@ -400,6 +415,14 @@ footer div.form div.container button {
 	border: 0;
 	border-radius: @border_radius;
 	.button;
+}
+
+footer div.form div.container button:hover {
+	box-shadow: 0px 0px 5px 2px @color_call_to_action;
+}
+
+footer div.form div.container button:active {
+	.button_active
 }
 
 footer div.copyright {
