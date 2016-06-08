@@ -53,6 +53,11 @@ Site.handle_scroll = function(event) {
 		header.classList.remove('floating');
 };
 
+Site.handle_submission = function(reponse_data) {
+	fbq('track', 'Lead');
+	return true;
+};
+
 /**
  * Function called when document and images have been completely loaded.
  */
@@ -60,8 +65,15 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+	// handle window scroll
 	window.addEventListener('scroll', Site.handle_scroll);
 	Site.handle_scroll();
+
+	// handle form submissions
+	for (var index in Caracal.ContactForm.list) {
+		var contact_form = Caracal.ContactForm.list[index];
+		contact_form.events.connect('submit-success', Site.handle_submission);
+	}
 };
 
 
