@@ -15,4 +15,5 @@
 			</cms:template>
 		</div>
 	</footer>
+	<cms:template file="remarketing.html"/>
 </document>

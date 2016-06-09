@@ -53,8 +53,17 @@ Site.handle_scroll = function(event) {
 		header.classList.remove('floating');
 };
 
+/**
+ * Handle successful form submission.
+ */
 Site.handle_submission = function(reponse_data) {
+	// trigger facebook tracking
 	fbq('track', 'Lead');
+
+	// trigger adwords conversion
+	var image = new Image();
+	image.src = '//www.googleadservices.com/pagead/conversion/880511647/?label=f4FLCPi_omcQn5XuowM&amp;guid=ON&amp;script=0';
+
 	return true;
 };
 
