@@ -16,7 +16,7 @@
 			action="show"
 			text_id="header"
 			/>
-
+<!--
 		<div class="guarantee">
 			<cms:svg file="sprite.svg" symbol="wreath"/>
 			<cms:text constant="guarantee"/>
@@ -25,7 +25,7 @@
 
 		<cms:desktop>
 			<cms:svg file="sprite.svg" symbol="arrow-1" class="arrow"/>
-		</cms:desktop>
+		</cms:desktop> -->
 	</div>
 
 	<cms:template file="parts/form.xml"/>
