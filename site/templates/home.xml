@@ -18,7 +18,7 @@
 			</section>
 
 			<!-- Content -->
-			<section id="problems">
+<!-- 			<section id="problems">
 				<cms:module
 					name="articles"
 					action="show"
@@ -28,7 +28,7 @@
 				<cms:desktop>
 					<cms:svg file="sprite.svg" symbol="arrow-2" class="arrow"/>
 				</cms:desktop>
-			</section>
+			</section> -->
 
 			<section id="solutions">
 				<h3><cms:text constant="title_solutions"/></h3>
