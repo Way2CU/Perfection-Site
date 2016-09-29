@@ -37,7 +37,7 @@ section#header {
 	background-image: url(../images/mobile-header.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: 100vw calc(~'100vw * '@header_ratio);
+	background-size: 100% auto;
 }
 
 header.mobile_title {
@@ -89,7 +89,7 @@ section#header div.article {
 	padding: 5em 1em;
 	padding-bottom: 0;
 
-	height: calc(~'100vw * '@header_ratio);
+	height: calc(~'calc(100vw / 1.55)');
 	box-sizing: border-box;
 	position: relative;
 
@@ -149,7 +149,7 @@ section#header div.container {
 section#header h3 {
 	margin: 0px;
 	padding: 0.5em;
-
+	font-size: 1em;
 	background-color: @color_arrow_1;
 	color: @color_background;
 }
@@ -232,7 +232,7 @@ section#solutions {
 	.gradient_background;
 }
 
-/* section#solutions:before,
+section#solutions:before,
 section#solutions:after {
 	position: absolute;
 	top: -1px;
@@ -247,7 +247,7 @@ section#solutions:after {
 	background-repeat: 0px;
 	transform: scaleY(-1);
 }
- */
+
 section#solutions:after {
 	top: auto;
 	bottom: -1px;
