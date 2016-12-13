@@ -30,7 +30,19 @@
 				</cms:desktop>
 			</section> -->
 
+
 			<section id="solutions">
+
+			<!-- video -->
+			<div class="video">
+				<cms:module
+					name="youtube"
+					action="show"
+					text_id="home_video"
+					template="parts/youtube.xml"
+				/>
+			</div>
+
 				<h3><cms:text constant="title_solutions"/></h3>
 				<ul>
 					<cms:module
