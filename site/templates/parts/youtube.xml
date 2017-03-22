@@ -1,4 +1,5 @@
 <document>
+	<cms:desktop>
 		<cms:module
 			name="youtube"
 			action="show"
@@ -9,4 +10,17 @@
 			enable_api="1"
 			cms:eval="id"
 			/>
+	</cms:desktop>
+	<cms:mobile>
+		<cms:module
+			name="youtube"
+			action="show"
+			id="$params['id']"
+			embed="1"
+			width="300"
+			height="300"
+			enable_api="1"
+			cms:eval="id"
+			/>
+	</cms:mobile>
 </document>
