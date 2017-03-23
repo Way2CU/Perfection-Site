@@ -76,15 +76,19 @@ header a.phone {
 	padding: 0.5em;
 	padding-left: 2em;
 
-	border: 1px solid #f29b11;
+	border: 1px solid @color_phone;
 	border-radius: @border_radius * 2;
 	background-color: fade(@color_background, 60%);
 
-	color: #f29b11;
+	color: @color_text;
 	font-size: 1.5em;
 	font-weight: bold;
 	text-decoration: none;
 	line-height: 100%;
+}
+
+header.floating a.phone {
+	color: @color_phone;
 }
 
 header a.phone svg {
