@@ -56,6 +56,21 @@
 				</ul>
 			</section>
 
+			<section id="video">
+				<h2><cms:text constant="video_title"/></h2>
+
+				<div class="youtube">
+					<cms:module
+						name="youtube"
+						action="show"
+						text_id="solution_video"
+						embed="1"
+						width="500"
+						height="312"
+						/>
+				</div>
+			</section>
+
 			<!-- Footer with form -->
 			<cms:template file="parts/footer.xml"/>
 		</body>
