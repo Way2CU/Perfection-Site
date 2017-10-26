@@ -5,16 +5,42 @@
  * Copyright (c) 2016. by Way2CU, http://way2cu.com
  * Authors: Mladen Mijatov
  */
-
-@import 'common.less';
+@import (reference) 'common.less';
+@import (reference) 'stock/functions.less';
+@import 'fonts.less';
+// @import 'header.less';
+// @import 'content.less';
+// @import 'footer.less';
 @import (css) 'stock/header.css';
 @import (css) 'stock/copyright.css';
 
 body {
 	background-color: @color_background;
-
 	color: @color_text;
 	font-family: OpenSans, Arial;
+}
+
+input,
+select,
+textarea,
+button {
+	font-family: generic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	margin-bottom: @header_spacing;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	margin-bottom: @paragraph_spacing;
+	padding: 0;
 }
 
 h1, h2, h3, h4, h5,
@@ -458,3 +484,4 @@ footer div.copyright a {
 footer div.copyright a:hover {
 	text-decoration: none;
 }
+

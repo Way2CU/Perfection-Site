@@ -6,17 +6,22 @@
  * Authors: Mladen Mijatov
  */
 
-@import 'common.less';
 @import (css) 'stock/header.css';
 @import (css) 'stock/copyright.css';
 
 @header_ratio: 1.25;
 @footer_ratio: 1.8518518;
 
+@import (reference) 'common.less';
+@import (reference) 'stock/functions.less';
+@import 'fonts.less';
+// @import 'header_mobile.less';
+// @import 'content_mobile.less';
+// @import 'footer_mobile.less';
+@import (css) 'stock/copyright_mobile.css';
 
 body {
 	background-color: @color_background;
-
 	color: @color_text;
 	font-family: OpenSans, Arial;
 }
@@ -400,4 +405,21 @@ footer div.copyright a {
 
 footer div.copyright a:hover {
 	text-decoration: none;
+	color: @color_text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	margin-bottom: @header_spacing;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	margin-bottom: @paragraph_spacing;
+	padding: 0;
 }
