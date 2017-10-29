@@ -8,6 +8,7 @@
 		<param name="phone_sprite_icon" value="phone"/>
 		<param name="mobile_menu_sprite_icon" value=""/>
 		<param name="sprite" value="sprite.svg"/>
+		<param name="inline_menu" value=""/>
 	</cms:template>
 
 	<div class="article">

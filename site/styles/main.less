@@ -76,10 +76,13 @@ header.floating {
 }
 
 header a.logo {
-	margin-top: 50px;
 	margin-right: 90px;
 	padding: 1em;
 	transition: all 0.5s;
+
+	html &[dir=rtl] {
+		margin-top: 50px;
+	}
 }
 
 header a.logo img {
@@ -98,7 +101,7 @@ header.floating a.logo img {
 header a.phone {
 	position: absolute;
 	top: 1em;
-	left: calc(~'(100% - 1200px) / 2');
+	right: calc(~'(100% - 1200px) / 2');
 	padding: 0.5em;
 	padding-left: 2em;
 
@@ -111,6 +114,16 @@ header a.phone {
 	font-weight: bold;
 	text-decoration: none;
 	line-height: 100%;
+
+	&:hover,
+	&:active {
+		background-color: fade(@color_background, 100%);
+	}
+
+	html[dir=rtl] & {
+		right: unset;
+		left: calc(~'(100% - 1200px) / 2');
+	}
 }
 
 header.floating a.phone {
@@ -241,16 +254,21 @@ section#header form input {
 	transition: border-color 0.2s;
 }
 
-section#header form input:focus {
+section#header form input:focus,
+section#header form input:hover {
 	border-color: @color_footer_title;
 }
 
 section#header form button {
 	padding: 0.5em 2em;
-
+	margin-left: 1em;
 	border: 0;
 	border-radius: @border_radius;
 	.button;
+
+	html[dir=rtl] & {
+		margin-left: 0;
+	}
 }
 
 section#header form button:hover {
@@ -463,6 +481,10 @@ footer div.form div.container input {
 
 	color: @color_text;
 	transition: border-color 0.2s;
+
+	&:hover {
+		box-shadow: 0px 0px 1px 1px @color_call_to_action;
+	}
 }
 
 footer div.form div.container input:focus {
