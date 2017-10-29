@@ -1,3 +1,1 @@
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none" height="100" width="100">
-   <polygon fill="#ffffff" points="100,100 100,0 0,100 "/>
-</svg>
+<svg height="100" preserveAspectRatio="none" viewBox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg"><path d="m100 100v-100l-100 100z" fill="#fff"/></svg>
